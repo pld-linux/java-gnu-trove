@@ -6,12 +6,13 @@ Version:	1.0.2
 Release:	0.1
 License:	LGPL
 Group:		Development/Languages/Java
-Source0:	http://dl.sourceforge.net/trove4j/trove-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/trove4j/trove-%{version}.tar.gz
 # Source0-md5:	a246a09db112b7986b02c2a9f771bae0
 Source1:	%{name}-build.xml
 URL:		http://trove4j.sourceforge.net/
 BuildRequires:	ant >= 0:1.6
 BuildRequires:	ant-junit >= 0:1.6
+BuildRequires:	jdk
 BuildRequires:	jpackage-utils >= 0:1.5.32
 BuildRequires:	junit
 BuildRequires:	rpm-javaprov
@@ -40,15 +41,15 @@ performance gains.
 %description -l pl.UTF-8
 Biblioteka GNU Trove ma dwa cele:
 
-1. Udostępnienie wolnodostępnych, szybkich, lekkich implementacji
-API java.util Collections. Implementacje te są projektowane jako
+1. Udostępnienie wolnodostępnych, szybkich, lekkich implementacji API
+java.util Collections. Implementacje te są projektowane jako
 zamienniki ich odpowiedników z JDK.
 
 2. Na ile to możliwe udostępnienie takiej samej obsługi kolekcji dla
-typów prymitywnych. W JDK jest to zwykle osiągane poprzezużycie klas
+typów prymitywnych. W JDK jest to zwykle osiągane poprzez użycie klas
 obudowujących (java.lang.Integer, java.lang.Float itp.) wraz z
 kolekcjami opartymi na obiektach. Dla większości aplikacji jednak
-kolekcje przechowujące prymitywy zwykle wymagają mniej miejsca i
+kolekcje przechowujące prymitywy zwykle wymagają mniej pamięci i
 osiągają znaczącą poprawę wydajności.
 
 %package javadoc
