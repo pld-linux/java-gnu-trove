@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.java
 Summary:	High performance collections for Java
 Summary(pl.UTF-8):	Wysokowydajne kolekcje dla Javy
 Name:		gnu.trove
