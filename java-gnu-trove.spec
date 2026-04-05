@@ -1,3 +1,5 @@
+%{?use_default_jdk:%use_default_jdk 8}
+
 Summary:	High performance collections for Java
 Summary(pl.UTF-8):	Wysokowydajne kolekcje dla Javy
 Name:		gnu.trove
@@ -11,11 +13,11 @@ Source1:	%{name}-build.xml
 URL:		http://trove4j.sourceforge.net/
 BuildRequires:	ant >= 0:1.6
 BuildRequires:	ant-junit >= 0:1.6
-BuildRequires:	jdk
+%buildrequires_jdk
 BuildRequires:	jpackage-utils >= 0:1.5.32
-BuildRequires:	junit
+BuildRequires:	java-junit
 BuildRequires:	rpm-javaprov
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.556
 %if %(locale -a | grep -q '^en_US$'; echo $?)
 BuildRequires:	glibc-localedb-all
 %endif
